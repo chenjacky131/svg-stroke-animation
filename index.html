@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<style type="text/css">
+		path {
+    stroke-dasharray: 803; /*虚线之间的间距*/
+    stroke-dashoffset: -803;/*可以让路径位移*/
+  animation: dash 5s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+	</style>
+</head>
+<body>
+	<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+ <g>
+    <path id="svg_3" d="m177.61248,213.74564l80.41447,0l24.84869,-76.39341l24.8487,76.39341l80.41446,0l-65.05655,47.21318l24.84998,76.39341l-65.05658,-47.21447l-65.05657,47.21447l24.84998,-76.39341l-65.05657,-47.21318z" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+</svg>
+<script type="text/javascript">
+	var path = document.querySelector('path');//获取路径
+var length = path.getTotalLength();// 获取路径长度
+</script>
+</body>
+</html>
